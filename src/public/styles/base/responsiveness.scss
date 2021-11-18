@@ -139,3 +139,38 @@
     }
   }
 }
+
+@media screen and (min-width: 374px) {
+  .title {
+    h1 {
+      padding-top: 1rem;
+    }
+  }
+  .text-mobile {
+    word-break: break-all;
+  }
+  .slick-slider {
+    margin-top: 1rem;
+  }
+  .grid-map {
+    margin-top: 2rem;
+    img {
+      &:not(:first-child) {
+        width: 4vh;
+        height: 9vh;
+      }
+    }
+  }
+  .relative-mobile {
+    margin-top: 2rem;
+  }
+  .mr-3 {
+    word-break: break-all;
+  }
+  .app-cover-img {
+    margin-left: -17%;
+  }
+  .icons-mobile {
+    margin-right: 47%;
+  }
+}

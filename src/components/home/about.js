@@ -22,7 +22,7 @@ class About extends React.Component {
               <h1>{page.title.rendered}</h1>
               <p className="orange">Good, Easy, Fast</p>
             </div>
-            <div dangerouslySetInnerHTML={{ __html: page.content.rendered }} />
+            <div className="text-mobile" dangerouslySetInnerHTML={{ __html: page.content.rendered }} />
 
             <Button
               onClick={this.handleModal}
@@ -62,7 +62,7 @@ class About extends React.Component {
           </div>
         </Grid>
         <Grid item xs={12} md={7}>
-          <div className="relative" align="center">
+          <div className="relative relative-mobile" align="center">
             <img src="/images/leaf.svg" alt="" className="shape-leaf" />
             <div className="section-shape">
               <img src="/images/Vector2.svg" alt="vector2" />

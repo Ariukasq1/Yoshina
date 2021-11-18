@@ -19,7 +19,7 @@ class Footer extends React.Component {
               )}
 
               <div className="left-side">
-                <div className="icons">
+                <div className="icons icons-mobile">
                   <p className="no-margin">Follow us:</p>
                   <a
                     href={page.acf && page.acf.fb}
