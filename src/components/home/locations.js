@@ -9,6 +9,7 @@ const Locations = ({
   handleBlockScrollDown,
   locations,
   cat,
+  handleChange,
 }) => {
   const handleOnMouseOver = () => {
     handleBlockScrollDown(true);
@@ -44,6 +45,10 @@ const Locations = ({
   );
   return (
     <Container>
+      <div className="icon-scroll-down" onClick={() => handleChange(7)}>
+        <span>Scroll down</span>
+        <img src="/images/arrow-down.gif" alt="arrow down" />
+      </div>
       <Grid
         container
         spacing={3}
