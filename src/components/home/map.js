@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Grid } from "@mui/material";
+import { getData } from "../../utils";
 
 class Map extends React.Component {
   render() {
     const { cat, posts } = this.props;
-    console.log(posts, "posts");
     return (
       <Container>
         <Grid container spacing={2} alignItems="center" justifyContent="center">
@@ -26,24 +26,31 @@ class Map extends React.Component {
               <img src="/images/arrow-down.gif" alt="arrow down" />
             </div>
           </Grid>
-          <Grid item xs={12} md={7} className="grid-map">
-            <img src="/images/map.svg" alt="map" />
-            <img
-              src="/images/location1.svg"
-              alt=""
-              className="location1"
-              style={{}}
-            />
-            <img src="/images/location2.svg" alt="" className="pin" />
-            <img src="/images/location3.svg" alt="" className="location3" />
-            <img src="/images/location4.svg" alt="" className="location4" />
-            <img src="/images/location5.svg" alt="" className="location5" />
-            <img src="/images/locationCan.svg" alt="" className="locationCan" />
-            <img src="/images/locationCN.svg" alt="" className="locationCN" />
-            <img src="/images/locationEN.svg" alt="" className="locationEN" />
-            <img src="/images/locationJP2.svg" alt="" className="locationJP" />
-            <img src="/images/locationJP2.svg" alt="" className="locationJP2" />
-          </Grid>
+          {posts && posts.length > 0 && (
+            <Grid item xs={12} md={7} className="grid-map">
+              <img
+                src={
+                  cat && cat.acf && cat.acf.image
+                    ? cat.acf.image
+                    : "/images/mapBackground.svg"
+                }
+                alt="map"
+              />
+              {posts.map((post) => (
+                <img
+                  key={post.id}
+                  src={getData(post._embedded, "image")}
+                  alt={post.title.rendered}
+                  className={post.acf.class}
+                  style={{
+                    top: post.acf.top,
+                    left: post.acf.left,
+                    zIndex: post.acf.zIndex,
+                  }}
+                />
+              ))}
+            </Grid>
+          )}
         </Grid>
       </Container>
     );

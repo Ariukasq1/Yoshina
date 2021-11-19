@@ -58,7 +58,7 @@ const Locations = ({
           onMouseEnter={handleOnMouseOver}
           onMouseLeave={handleOnMouseOut}
         >
-          <div className="scroll-container scroll-chrome locations__scroll">
+          <div className="scroll-container scroll-chrome locations__scroll flex align-center">
             {locations &&
               locations.length > 0 &&
               locations.map((e) => renderLocationItem(e))}

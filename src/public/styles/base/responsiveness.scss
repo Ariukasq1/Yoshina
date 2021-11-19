@@ -1,9 +1,20 @@
+@media only screen and (max-width: 1536px) {
+  .app-cover-footer {
+    gap: 4rem;
+  }
+
+  .background-style .app-content h2 {
+    margin-top: 0;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .locations {
     &__item {
       img {
         width: 35% !important;
       }
+
       &__content {
         width: 65% !important;
       }
@@ -17,19 +28,27 @@
       img {
         width: 25% !important;
       }
+
       &__content {
         width: 75% !important;
       }
     }
+
     &__scroll {
       max-height: 30vh;
     }
+
     &__map {
       max-height: 40vh;
     }
   }
+
   .scroll-container {
     height: 30vh;
+  }
+
+  .footer-container footer {
+    margin-bottom: 2rem;
   }
 }
 
@@ -42,6 +61,7 @@
   .react-scroll-page-wrapper {
     height: initial !important;
     width: 100% !important;
+
     .react-scroll-page {
       transform: none !important;
       transition: none !important;
@@ -113,6 +133,7 @@
       padding-top: 0 !important;
     }
   }
+
   .title h1 {
     font-size: 1.6rem;
     line-height: 2rem;
@@ -169,17 +190,20 @@
       }
     }
   }
+
   .locations {
     &__item {
       img {
         width: 35% !important;
       }
+
       &__content {
         width: 65% !important;
       }
     }
   }
 }
+
 @media only screen and (min-width: 577px) {
   .locations {
     &__slider {
@@ -187,6 +211,7 @@
     }
   }
 }
+
 @media only screen and (max-width: 576px) {
   .locations {
     &__grid {
@@ -194,6 +219,7 @@
       width: 100% !important;
       margin-top: 0 !important;
     }
+
     &__item {
       position: relative;
       z-index: 1;
@@ -204,55 +230,37 @@
         0px 0px 1px rgba($color: $main-color, $alpha: 0.08);
       padding: 0 0 14px 0 !important;
       background-color: $color-white;
+
       img {
         width: 100% !important;
         height: 200px;
         border-radius: 8px 8px 0 0 !important;
       }
+
       &__content {
         box-sizing: border-box;
         width: 100% !important;
         border-radius: 0 0 8px 8px;
+
         h3 {
           padding-top: 16px;
         }
       }
     }
+
     &__scroll {
       overflow-x: hidden;
       overflow-y: visible;
       max-height: auto;
       display: none;
     }
+
     &__slider {
       display: block !important;
     }
+
     &__map {
       margin-top: 24px !important;
     }
-  }
-}
-
-@media (min-width: 600px) {
-  .MuiContainer-root {
-    padding-left: 24px;
-    max-width: 100% !important;
-    padding-right: 24px;
-  }
-}
-
-@media (min-width: 900px) {
-  .MuiContainer-root {
-    max-width: 100% !important;
-  }
-}
-
-@media (min-width: 1200px) {
-  .MuiContainer-root {
-    max-width: 1200px !important;
-  }
-  .overflow-right {
-    margin-left: calc((100vw - 1200px) / 2);
-    padding-left: 24px;
   }
 }
