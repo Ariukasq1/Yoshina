@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // base
 @import './base/mixins.scss';
 @import './base/variables.scss';
@@ -8,3 +9,19 @@
 @import './base/responsiveness.scss';
 
 @import './main.scss';
+=======
+//abstract
+@import "./base/abstract.scss";
+
+// base
+@import "./base/mixins.scss";
+@import "./base/variables.scss";
+@import "./base/general.scss";
+@import "./base/header.scss";
+@import "./base/footer.scss";
+
+@import "./map.scss";
+@import "./main.scss";
+
+@import "./base/responsiveness.scss";
+>>>>>>> ab414ec97beb8f8088d74edd9640c9504e72bd51
