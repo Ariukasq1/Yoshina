@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import GoogleMapReact from "google-map-react";
 import Marker from "./Marker";
-import { getData } from "../../utils";
 
 class GoogleMapComponent extends React.Component {
   constructor(props) {
@@ -24,7 +23,7 @@ class GoogleMapComponent extends React.Component {
   renderMarker(item) {
     return (
       <Marker
-        key={item.id}
+        key={"marker" + item.id}
         lat={item.acf && item.acf.lat}
         lng={(item.acf && item.acf.lon) || ""}
         addr={item.acf && item.acf.address}
@@ -35,14 +34,12 @@ class GoogleMapComponent extends React.Component {
       />
     );
   }
-
   onClickMarker = (currentMarkerTitle) => {
     this.setState({ currentMarkerTitle });
   };
 
   renderContent() {
     const { items } = this.props;
-    console.log(items, "items");
     if (!items || items.length === 0) {
       return null;
     }

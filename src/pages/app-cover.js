@@ -14,7 +14,7 @@ const AppCover = () => {
         <Grid item xs={12} md={7} className="app-content">
           <React.Fragment>
             <h2 className="mr-3">
-              Та манай аппликейшиныг татсанаар олон онцгой боломжууд хүлээж
+              Та манай аппликейшиныг татсанаар олон онц гой боломжууд хүлээж
               байна.
             </h2>
             <div className="store-images">
@@ -23,7 +23,7 @@ const AppCover = () => {
             </div>
           </React.Fragment>
         </Grid>
-        <Grid item sx={12} md={5} className="phone-image">
+        <Grid item xs={12} md={5} className="phone-image">
           <img
             src="/images/phones.svg"
             alt="application phone"
