@@ -1,12 +1,11 @@
 import React from "react";
 import PushPinOutlinedIcon from "@mui/icons-material/PushPinOutlined";
 import AccessTimeOutlinedIcon from "@mui/icons-material/AccessTimeOutlined";
-import { getData } from "../utils";
 
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
-const LocationItem = ({ key, address, schedule, image, name, phone, item }) => {
+const LocationItem = ({ id, address, schedule, image, name, phone, item }) => {
   return (
-    <div className="locations__item" key={key}>
+    <div className="locations__item" key={"loc" + id}>
       <img src={image} alt="" />
       <div className="locations__item__content">
         <h3>{name}</h3>

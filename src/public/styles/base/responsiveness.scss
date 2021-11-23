@@ -1,5 +1,4 @@
 @media only screen and (max-width: 1536px) {
-
   .app-cover-footer {
     gap: 4rem;
   }
@@ -7,7 +6,6 @@
   .background-style .app-content h2 {
     margin-top: 0;
   }
-
 }
 
 @media only screen and (max-width: 1200px) {
@@ -72,7 +70,7 @@
         display: none;
       }
 
-      &>div {
+      & > div {
         height: initial !important;
 
         .component {
@@ -93,7 +91,7 @@
         }
       }
 
-      .overflow-right>.MuiGrid-container {
+      .overflow-right > .MuiGrid-container {
         padding-left: 1rem;
         padding-right: 1rem;
       }
@@ -160,7 +158,6 @@
 }
 
 @media only screen and (max-width: 650px) {
-
   // menu
   .menu-drawer {
     &__inner {

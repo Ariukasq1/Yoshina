@@ -2,13 +2,14 @@ import React from "react";
 import GoogleMap from "../map/GoogleMap";
 import { Container, Grid } from "@mui/material";
 import Slider from "react-slick";
-
 import LocationItem from "../LocationItem";
+
 const Locations = ({
   handleBlockScrollUp,
   handleBlockScrollDown,
   locations,
   cat,
+  handleChange,
 }) => {
   const handleOnMouseOver = () => {
     handleBlockScrollDown(true);
@@ -31,9 +32,10 @@ const Locations = ({
     centerMode: false,
   };
 
-  const renderLocationItem = (item) => (
+  const renderLocationItem = (item, type) => (
     <LocationItem
       key={item.id}
+      id={type + item.id}
       address={item.acf.address}
       schedule={item.acf.schedule}
       image={item.acf.image.url}
@@ -44,6 +46,10 @@ const Locations = ({
   );
   return (
     <Container>
+      <div className="icon-scroll-down" onClick={() => handleChange(7)}>
+        <span>Scroll down</span>
+        <img src="/images/arrow-down.gif" alt="arrow down" />
+      </div>
       <Grid
         container
         spacing={3}
@@ -61,11 +67,11 @@ const Locations = ({
           <div className="scroll-container scroll-chrome locations__scroll flex align-center">
             {locations &&
               locations.length > 0 &&
-              locations.map((e) => renderLocationItem(e))}
+              locations.map((e) => renderLocationItem(e, "scroll"))}
           </div>
           {locations && locations.length > 0 && (
             <Slider className="locations__slider" settings={{ ...settings }}>
-              <div>{locations.map((e) => renderLocationItem(e))}</div>
+              <div>{locations.map((e) => renderLocationItem(e, "slider"))}</div>
             </Slider>
           )}
         </Grid>

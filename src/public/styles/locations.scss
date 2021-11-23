@@ -80,8 +80,8 @@
 }
 .marker-content {
   position: absolute;
-  top: -135px;
-  left: -138px;
+  top: -175px;
+  left: -158px;
   background: #fff;
   width: 350px;
   min-height: 60px;
@@ -149,4 +149,5 @@
   object-fit: contain;
   color: $red-color;
   position: relative;
+  transform: translate(-50%, -100%);
 }

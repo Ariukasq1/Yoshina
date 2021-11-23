@@ -132,6 +132,7 @@ const Index = ({
           <Locations
             locations={localLocations}
             cat={locsCat}
+            handleChange={handlePageChange}
             handleBlockScrollUp={handleBlockScrollUp}
             handleBlockScrollDown={handleBlockScrollDown}
           />
