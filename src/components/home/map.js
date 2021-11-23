@@ -7,7 +7,7 @@ class Map extends React.Component {
     const { cat, posts } = this.props;
     return (
       <Container>
-        <Grid container spacing={2} alignItems="center" justifyContent="center">
+        <Grid container spacing={2} alignItems="center" justifyContent="center" className="grid-container">
           <Grid item xs={12} md={5}>
             <div className="content">
               <div className="tag">

@@ -42,7 +42,7 @@ class Special extends React.Component {
           <span>Scroll down</span>
           <img src="/images/arrow-down.gif" alt="arrow down" />
         </div>
-        <Grid container spacing={6} alignItems="center" justifyContent="center">
+        <Grid container spacing={6} alignItems="center" justifyContent="center" className="special-container">
           <Grid item xs={12} md={7}>
             <div className="content-special">
               <div className="tag">

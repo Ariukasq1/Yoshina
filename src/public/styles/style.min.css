@@ -973,6 +973,8 @@ header .tool-bar .nav-links .menu-btn {
     transform: translateY(0px);
   }
 }
+/*===============  BREAKPOINTS ===============*/
+/* For large devices */
 @media only screen and (max-width: 1536px) {
   .app-cover-footer {
     gap: 4rem;
@@ -988,28 +990,6 @@ header .tool-bar .nav-links .menu-btn {
   }
   .locations__item__content {
     width: 65% !important;
-  }
-}
-@media only screen and (max-width: 899px) {
-  .locations__item img {
-    width: 25% !important;
-  }
-  .locations__item__content {
-    width: 75% !important;
-  }
-  .locations__scroll {
-    max-height: 30vh;
-  }
-  .locations__map {
-    max-height: 40vh;
-  }
-
-  .scroll-container {
-    height: 30vh;
-  }
-
-  .footer-container footer {
-    margin-bottom: 2rem;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -1074,7 +1054,26 @@ header .tool-bar .nav-links .menu-btn {
     margin-top: -10%;
   }
 }
-@media only screen and (max-width: 767px) {
+/* For medium devices */
+@media only screen and (max-width: 899px) {
+  .locations__item img {
+    width: 25% !important;
+  }
+  .locations__item__content {
+    width: 75% !important;
+  }
+  .locations__scroll {
+    max-height: 30vh;
+  }
+  .locations__map {
+    max-height: 40vh;
+  }
+
+  .footer-container footer {
+    margin-bottom: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
   .locations .MuiGrid-item {
     padding-left: 0 !important;
     padding-top: 0 !important;
@@ -1098,6 +1097,67 @@ header .tool-bar .nav-links .menu-btn {
   .footer-container footer .content .address-container .address {
     max-width: 100%;
     width: 100%;
+  }
+
+  .grid-container {
+    gap: 4.5rem;
+  }
+
+  .relative-mobile {
+    margin-top: 2rem;
+  }
+
+  .slick-slide > div {
+    margin-top: 1rem;
+    width: 85%;
+  }
+
+  .locations__grid {
+    padding-left: 1rem;
+  }
+
+  .locations .slick-slide > div {
+    width: 95%;
+  }
+
+  .special-container {
+    gap: 3rem !important;
+  }
+  .special-container .scroll-container {
+    width: 90% !important;
+    height: 25vh !important;
+    margin: auto;
+  }
+  .special-container .scroll-container .text p {
+    max-width: 80% !important;
+  }
+  .special-container .scroll-container .scroll-item > img {
+    width: 3vh;
+    height: 3vh;
+  }
+
+  .store-images {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 1rem;
+  }
+
+  .instagram-link .bg {
+    width: calc(100% - 25px) !important;
+  }
+  .instagram-link .bg::before {
+    content: "";
+    height: 80% !important;
+    width: 80% !important;
+  }
+
+  .icons-mobile {
+    justify-content: flex-start !important;
+  }
+
+  .footer-container .content {
+    margin-top: 1rem;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -1123,50 +1183,6 @@ header .tool-bar .nav-links .menu-btn {
     font-size: 1.8rem !important;
   }
 }
-@media screen and (max-width: 375px) {
-  .title h1 {
-    padding-top: 1rem;
-  }
-
-  .text-mobile {
-    word-break: break-all;
-  }
-
-  .slick-slider {
-    margin-top: 1rem;
-  }
-
-  .grid-map {
-    margin-top: 2rem;
-  }
-  .grid-map img:not(:first-child) {
-    width: 4vh;
-    height: 9vh;
-  }
-
-  .relative-mobile {
-    margin-top: 2rem;
-  }
-
-  .mr-3 {
-    word-break: break-all;
-  }
-
-  .app-cover-img {
-    margin-left: -17%;
-  }
-
-  .icons-mobile {
-    margin-right: 47%;
-  }
-}
-.locations__item img {
-  width: 35% !important;
-}
-.locations__item__content {
-  width: 65% !important;
-}
-
 @media only screen and (min-width: 577px) {
   .locations__slider {
     display: none !important;
@@ -1212,6 +1228,33 @@ header .tool-bar .nav-links .menu-btn {
   }
   .locations__map {
     margin-top: 24px !important;
+  }
+}
+/* For small devices */
+@media screen and (max-width: 414px) {
+  .title h1 {
+    padding-top: 1rem;
+  }
+
+  .slick-slider {
+    margin-top: 1rem;
+  }
+
+  .grid-map img:not(:first-child) {
+    width: 4vh;
+    height: 9vh;
+  }
+
+  .relative-mobile {
+    margin-top: 3rem;
+  }
+
+  .app-cover-img {
+    margin-left: -17%;
+  }
+
+  .app-content h2 {
+    font-size: 1.6rem !important;
   }
 }
 
