@@ -99,6 +99,10 @@ hr {
 //display
 .flex {
   display: flex;
+
+  &.align-center {
+    display: flex !important;
+  }
 }
 
 .inline-block {

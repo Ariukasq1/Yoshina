@@ -20,7 +20,7 @@ class Revolution extends React.Component {
           <img className="img" src={getData(page._embedded, "image")} alt="" />
         </Grid>
         <Grid item xs={12}>
-          <div dangerouslySetInnerHTML={{ __html: page.content.rendered }} />
+          <div className="text-mobile" dangerouslySetInnerHTML={{ __html: page.content.rendered }} />
 
           <div
             className="icon-scroll-down"

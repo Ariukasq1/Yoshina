@@ -46,7 +46,7 @@ const Index = ({
   };
 
   const handleBeforePageChange = (number) => {
-    console.log(number);
+    // console.log(number);
   };
   const handleBlockScrollDown = (state) => {
     setBlockScrollDown(state);

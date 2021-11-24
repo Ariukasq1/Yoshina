@@ -7,11 +7,9 @@
   right: -1%;
   top: -5.78%;
   bottom: 50.16%;
-  background: radial-gradient(
-    50% 50% at 50% 50%,
-    #ff7800 0%,
-    rgba(255, 120, 0, 0) 100%
-  );
+  background: radial-gradient(50% 50% at 50% 50%,
+      #ff7800 0%,
+      rgba(255, 120, 0, 0) 100%);
   opacity: 0.4;
   filter: blur(110px);
   z-index: -1;
@@ -113,7 +111,7 @@
   margin-right: 1rem;
 }
 
-.video-btn {
+.MuiButton-root.video-btn {
   color: $text-secondary-color;
   text-transform: initial;
 
@@ -245,7 +243,7 @@
   padding: 0 8% 0 0 !important;
 }
 
-.slick-slide > div {
+.slick-slide>div {
   padding: 0 0.5rem;
 }
 
@@ -309,6 +307,7 @@
 }
 
 @keyframes bounce {
+
   0%,
   20%,
   50%,
