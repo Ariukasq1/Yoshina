@@ -90,6 +90,9 @@ hr {
 .flex {
   display: flex;
 }
+.flex.align-center {
+  display: flex !important;
+}
 
 .inline-block {
   display: inline-block;
@@ -777,11 +780,11 @@ header .tool-bar .nav-links .menu-btn {
   margin-top: 1rem;
 }
 
-.video-btn {
+.MuiButton-root.video-btn {
   color: #1f2933;
   text-transform: initial;
 }
-.video-btn img {
+.MuiButton-root.video-btn img {
   width: 3rem;
   margin-right: 1rem;
 }

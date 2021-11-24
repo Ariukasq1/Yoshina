@@ -22,7 +22,10 @@ class About extends React.Component {
               <h1>{page.title.rendered}</h1>
               <p className="orange">Good, Easy, Fast</p>
             </div>
-            <div className="text-mobile" dangerouslySetInnerHTML={{ __html: page.content.rendered }} />
+            <div
+              className="text-mobile"
+              dangerouslySetInnerHTML={{ __html: page.content.rendered }}
+            />
 
             <Button
               onClick={this.handleModal}
